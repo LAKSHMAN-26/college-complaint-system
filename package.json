@@ -1,0 +1,30 @@
+{
+  "name": "college-complaint-management-system",
+  "version": "1.0.0",
+  "description": "CampusResolve - Full-stack College Grievance & Complaint Management System (MERN)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seed/seedData.js",
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "mern",
+    "grievance-management",
+    "complaint-system",
+    "college-portal",
+    "react",
+    "node",
+    "mongodb",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
